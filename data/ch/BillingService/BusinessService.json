@@ -38,7 +38,7 @@
       "isVoucherCreationEnabled": true
     },
     {
-      "businessService": "RehriRC",
+      "businessService": "CTL.RehriRC",
       "code": "CTL.REHRI_REGISTRATION",
       "collectionModesNotAllowed": [
         "DD"
@@ -49,7 +49,7 @@
       "isVoucherCreationEnabled": true
     },
     {
-      "businessService": "RehriDL",
+      "businessService": "CTL.RehriDL",
       "code": "CTL.REHRI_DRIVING_LICENSE",
       "collectionModesNotAllowed": [
         "DD"
@@ -60,7 +60,7 @@
       "isVoucherCreationEnabled": true
     },
     {
-      "businessService": "DhobiGhat",
+      "businessService": "CTL.DhobiGhat",
       "code": "CTL.DHOBI_GHAT",
       "collectionModesNotAllowed": [
         "DD"
@@ -71,7 +71,7 @@
       "isVoucherCreationEnabled": true
     },
     {
-      "businessService": "BookShop",
+      "businessService": "CTL.BookShop",
       "code": "CTL.OLD_BOOK_MARKET",
       "collectionModesNotAllowed": [
         "DD"
@@ -1163,17 +1163,6 @@
       "isVoucherCreationEnabled": true,
       "isActive": true
     },
-	{
-      "businessService": "Permission Management",
-      "code": "OPMS",
-      "collectionModesNotAllowed": [
-        "DD"
-      ],
-      "partPaymentAllowed": true,
-      "isAdvanceAllowed": false,
-      "demandUpdateTime": 86400000,
-      "isVoucherCreationEnabled": true
-    },
     {
 	  "businessService": "Day Market.Contractor Security Fee",
 	  "code": "DAY_MARKET.CONTRACTOR_SECURITY_FEE",
@@ -1200,6 +1189,39 @@
 	  "isVoucherCreationEnabled": true,
 	  "isActive": true,
 	  "type": "apnimandi"
+    },
+	{
+      "businessService": "Permission Management",
+      "code": "OPMS.PETNOC",
+      "collectionModesNotAllowed": [
+        "DD"
+      ],
+      "partPaymentAllowed": true,
+      "isAdvanceAllowed": false,
+      "demandUpdateTime": 86400000,
+      "isVoucherCreationEnabled": true
+    },
+	{
+      "businessService": "Permission Management",
+      "code": "OPMS.ROADCUTNOC",
+      "collectionModesNotAllowed": [
+        "DD"
+      ],
+      "partPaymentAllowed": true,
+      "isAdvanceAllowed": false,
+      "demandUpdateTime": 86400000,
+      "isVoucherCreationEnabled": true
+    },
+	{
+      "businessService": "Permission Management",
+      "code": "OPMS.ADVERTISEMENTNOC",
+      "collectionModesNotAllowed": [
+        "DD"
+      ],
+      "partPaymentAllowed": true,
+      "isAdvanceAllowed": false,
+      "demandUpdateTime": 86400000,
+      "isVoucherCreationEnabled": true
     }
   ]
 }

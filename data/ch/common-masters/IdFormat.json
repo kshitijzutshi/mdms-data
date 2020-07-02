@@ -460,7 +460,7 @@
             "idname": "pt.propertyid"
         },
         {
-            "format": "PM-[cy:yyyy-MM-dd]-[ID_GENERATOR_ID_SEQ]",
+            "format": "PM-[cy:yyyy-MM-dd]-[SEQ_PM_ID_GEN]",
             "idname": "ch.pms"
         },
         {
@@ -470,7 +470,11 @@
         {
             "format": "TD-[cy:yyyy-MM-dd]-[ID_GENERATOR_ID_SEQ]",
             "idname": "ch.prscptd"
-        }                  
+        },
+        {
+            "format": "CH-HC-[cy:yyyy-MM-dd]-[SEQ_EG_HC_APL]",
+            "idname": "ch.hc"
+        }                    
 
     ]
 }
