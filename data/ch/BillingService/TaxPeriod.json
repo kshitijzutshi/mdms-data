@@ -450,6 +450,14 @@
       "code": "CTLOBM10YRS2019",
       "financialYear": "2020-30"
     },
+    {
+      "fromDate": 1585679400000,
+      "toDate": 1901298599000,
+      "periodCycle": "TENYEARS",
+      "service": "CTL.RENTED_PROPERTIES",
+      "code": "CTLOBM10YRS2019",
+      "financialYear": "2020-30"
+    },
 	{
       "fromDate": 1554057001000,
       "toDate": 1585593001000,
