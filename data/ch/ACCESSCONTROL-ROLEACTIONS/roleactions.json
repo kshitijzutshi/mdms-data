@@ -28282,13 +28282,13 @@
       "tenantId": "ch"
     },
 	{
-      "rolecode": "EMPLOYEE",
+      "rolecode": "CTL_CLERK",
       "actionid": 4080,
       "actioncode": "",
       "tenantId": "ch"
     },
 	{
-      "rolecode": "EMPLOYEE",
+      "rolecode": "CTL_CLERK",
       "actionid": 4081,
       "actioncode": "",
       "tenantId": "ch"
