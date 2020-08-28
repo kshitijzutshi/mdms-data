@@ -1,7 +1,7 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OwnershipTransfer_SaleDeed": [
+  "EstateBranch_OwnershipTransfer_FamilySettlement": [
     {
       "fields": [
         {
@@ -9,43 +9,9 @@
           "required": true,
           "validations": [
             {
-              "type": "mdms",
+              "type": "enum",
               "params": {
-                "moduleName": "EstatePropertyService",
-                "masterName": "modeOfTransfer",
-                "filter": "modeOfTransfer..code"
-              }
-            }
-          ]
-        },
-        {
-          "path": "registrationNumber",
-          "required": false,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 0,
-                "max": 100
-              }
-            }
-          ]
-        },
-        {
-          "path": "dateOfRegistration",
-          "required": false,
-          "validations": [
-            {
-              "type": "date-range",
-              "params": {
-                "start": {
-                  "unit": "year",
-                  "value": -40
-                },
-                "end": {
-                  "unit": "second",
-                  "value": 0
-                }
+                "values": ["FAMILY_SETTLEMENT", "COURT_DECREE"]
               }
             }
           ]
@@ -65,6 +31,38 @@
           "validations": [
             {
               "type": "transferor"
+            }
+          ]
+        },
+        {
+          "path": "registrationNumber",
+          "required": true,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 0,
+                "max": 100
+              }
+            }
+          ]
+        },
+        {
+          "path": "dateOfRegistration",
+          "required": true,
+          "validations": [
+            {
+              "type": "date-range",
+              "params": {
+                "start": {
+                  "unit": "year",
+                  "value": -40
+                },
+                "end": {
+                  "unit": "second",
+                  "value": 0
+                }
+              }
             }
           ]
         },
@@ -285,3 +283,4 @@
     }
   ]
 }
+// Confirm the "Settelment / Decree details  Not captured anywhere in Property Master" details and close it.
