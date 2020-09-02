@@ -13354,6 +13354,17 @@
       "navigationURL": "report/rainmaker-common/CollectionRegister",
       "path": "Reports.Collection Register"
     },
+    { 
+      "displayName": "Rented Properties",
+      "enabled": true,
+      "id": 1775,
+      "leftIcon": "action:announcement",
+      "name": "rainmaker-common-rented-properties",
+      "navigationURL": "rented-properties/home",
+      "orderNumber": 2,
+      "tenantId": "ch",
+      "url": "card"
+    },
     {
       "id": 1812,
       "name": "UC Report",
