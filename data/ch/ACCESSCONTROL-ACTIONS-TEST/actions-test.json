@@ -13359,7 +13359,7 @@
       "enabled": true,
       "id": 21810,
       "leftIcon": "action:announcement",
-      "name": "rainmaker-common-rented-properties",
+      "name": "rainmaker-citizen-rented-properties",
       "navigationURL": "rented-properties/home",
       "orderNumber": 2,
       "tenantId": "ch",
