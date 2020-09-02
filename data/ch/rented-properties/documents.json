@@ -1,6 +1,6 @@
 {
     "tenantId": "ch",
-    "moduleName": "PropertyServices",
+    "moduleName": "RentedProperties",
     "applications": [{
         "code": "MasterRP",
         "type": "RentedProperties",

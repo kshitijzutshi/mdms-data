@@ -1,6 +1,6 @@
 {
     "tenantId": "ch",
-    "moduleName": "PropertyServices",
+    "moduleName": "RentedProperties",
     "colonies": [
         {
             "code": "COLONY.MILK",
