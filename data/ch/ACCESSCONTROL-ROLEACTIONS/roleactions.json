@@ -37903,6 +37903,48 @@
 			"tenantId": "ch"
 		},
 		{
+			"rolecode": "RP_CLERK",
+			"actionid": 21810,
+			"actioncode": "",
+			"tenantid": "ch"
+		},
+		{
+			"rolecode": "RP_JA",
+			"actionid": 21810,
+			"actioncode": "",
+			"tenantid": "ch"
+		},
+		{
+			"rolecode": "RP_SA",
+			"actionid": 21810,
+			"actioncode": "",
+			"tenantid": "ch"
+		},
+		{
+			"rolecode": "RP_SI",
+			"actionid": 21810,
+			"actioncode": "",
+			"tenantid": "ch"
+		},
+		{
+			"rolecode": "RP_CA",
+			"actionid": 21810,
+			"actioncode": "",
+			"tenantid": "ch"
+		},
+		{
+			"rolecode": "RP_SURVEYOR",
+			"actionid": 21810,
+			"actioncode": "",
+			"tenantid": "ch"
+		},
+		{
+			"rolecode": "CITIZEN",
+			"actionid": "21810",
+			"actioncode": "",
+			"tenantId": "ch"
+		},
+		{
 			"rolecode": "ADDITIONAL_COMMISSIONER",
 			"actionid": "1730",
 			"actioncode": "",

@@ -13357,7 +13357,7 @@
     { 
       "displayName": "Rented Properties",
       "enabled": true,
-      "id": 1775,
+      "id": 21810,
       "leftIcon": "action:announcement",
       "name": "rainmaker-common-rented-properties",
       "navigationURL": "rented-properties/home",
