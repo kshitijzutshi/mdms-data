@@ -16600,6 +16600,18 @@
       "code": "null",
       "path": "UpdateCapturingTransiteSiteImagesApi"
     },
+    {
+      "id": 4084,
+      "name": "OfflineRentPayment",
+      "url": "/rp-services/property/_payrent",
+      "displayName": "update capturing transite site images api",
+      "orderNumber": 0,
+      "parentModule": "",
+      "enabled": true,
+      "serviceCode": "CapturingTransiteSiteImagesApi",
+      "code": "null",
+      "path": "UpdateCapturingTransiteSiteImagesApi"
+    },
 	 {
       "id": 4080,
       "name": "CreateNoticeGenerationApi",
