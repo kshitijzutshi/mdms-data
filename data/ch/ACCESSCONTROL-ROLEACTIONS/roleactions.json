@@ -37951,6 +37951,12 @@
 			"tenantId": "ch"
 		},
 		{
+			"rolecode": "CITIZEN",
+			"actionid": "4084",
+			"actioncode": "",
+			"tenantId": "ch"
+		},
+		{
 			"rolecode": "ADDITIONAL_COMMISSIONER",
 			"actionid": "1730",
 			"actioncode": "",
