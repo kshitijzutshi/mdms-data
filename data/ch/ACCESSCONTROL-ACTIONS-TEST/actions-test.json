@@ -13366,6 +13366,78 @@
       "url": "card"
     },
     {
+      "id": 3000,
+      "name": "CreatePropertyMasterApi",
+      "url": "/est-services/property-master/_create",
+      "displayName": "Create Property Master api",
+      "orderNumber": 0,
+      "parentModule": "",
+      "enabled": true,
+      "serviceCode": "CreatePropertyMasterApi",
+      "code": "null",
+      "path": "CreatePropertyMasterApi"
+    },
+    {
+      "id": 3001,
+      "name": "SearchPropertyMasterApi",
+      "url": "/est-services/property-master/_search",
+      "displayName": "Search Property Master api",
+      "orderNumber": 0,
+      "parentModule": "",
+      "enabled": true,
+      "serviceCode": "SearchPropertyMasterApi",
+      "code": "null",
+      "path": "SearchPropertyMasterApi"
+    },
+    {
+      "id": 3002,
+      "name": "UpdatePropertyMasterApi",
+      "url": "/est-services/property-master/_update",
+      "displayName": "Update Property Master api",
+      "orderNumber": 0,
+      "parentModule": "",
+      "enabled": true,
+      "serviceCode": "UpdatePropertyMasterApi",
+      "code": "null",
+      "path": "UpdatePropertyMasterApi"
+    },
+    {
+      "id": 3003,
+      "name": "CreateApplicationApi",
+      "url": "/est-services/application/_create",
+      "displayName": "Create Application api",
+      "orderNumber": 0,
+      "parentModule": "",
+      "enabled": true,
+      "serviceCode": "CreateApplicationApi",
+      "code": "null",
+      "path": "CreateApplicationApi"
+    },
+      {
+      "id": 3004,
+      "name": "SearchApplicationApi",
+      "url": "/est-services/application/_search",
+      "displayName": "Search Application API",
+      "orderNumber": 0,
+      "parentModule": "",
+      "enabled": true,
+      "serviceCode": "SearchApplicationApi",
+      "code": "null",
+      "path": "SearchApplicationApi"
+    },
+      {
+      "id": 3005,
+      "name": "UpdateApplicationApi",
+      "url": "/est-services/application/_update",
+      "displayName": "Update Application API",
+      "orderNumber": 0,
+      "parentModule": "",
+      "enabled": true,
+      "serviceCode": "UpdateApplicationApi",
+      "code": "null",
+      "path": "UpdateApplicationApi"
+    },
+    {
       "id": 1812,
       "name": "UC Report",
       "url": "/report/rainmaker-common/_get",
