@@ -1,7 +1,7 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OwnershipTransfer_SaleDeed": [
+  "EstateBranch_OwnershipTransfer_FamilySettlement": [
     {
       "fields": [
         {
@@ -9,12 +9,28 @@
           "required": true,
           "validations": [
             {
-              "type": "mdms",
+              "type": "enum",
               "params": {
-                "moduleName": "EstatePropertyService",
-                "masterName": "modeOfTransfer",
-                "filter": "modeOfTransfer..code"
+                "values": ["FAMILY_SETTLEMENT", "COURT_DECREE"]
               }
+            }
+          ]
+        },
+        {
+          "path": "transferor",
+          "required": true,
+          "validations": [
+            {
+              "type": "object"
+            }
+          ]
+        },
+        {
+          "path": "transferor.id",
+          "required": true,
+          "validations": [
+            {
+              "type": "transferor"
             }
           ]
         },
@@ -47,24 +63,6 @@
                   "value": 0
                 }
               }
-            }
-          ]
-        },
-        {
-          "path": "transferor",
-          "required": true,
-          "validations": [
-            {
-              "type": "object"
-            }
-          ]
-        },
-        {
-          "path": "transferor.id",
-          "required": true,
-          "validations": [
-            {
-              "type": "transferor"
             }
           ]
         },
@@ -285,3 +283,4 @@
     }
   ]
 }
+// Confirm the "Settelment / Decree details  Not captured anywhere in Property Master" details and close it.

@@ -1,11 +1,11 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OwnershipTransfer_SaleDeed": [
+  "EstateBranch_OwnershipTransfer_PatnershipDeed": [
     {
       "fields": [
         {
-          "path": "modeOfTransfer",
+          "path": "modeOfTransfer", // Mode of transfer need to be updated by front end as enums
           "required": true,
           "validations": [
             {
@@ -155,6 +155,80 @@
             },
             {
               "type": "minmax",
+              "params": {
+                "min": 0,
+                "max": 100
+              }
+            }
+          ]
+        },
+        {
+          "path": "tradeType", // this need to be an enum and get details from frontend
+          "required": true,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 5,
+                "max": 150
+              }
+            }
+          ]
+        },
+        {
+          "path": "company",
+          "required": true,
+          "validations": [
+            {
+              "type": "object"
+            }
+          ]
+        },
+        {
+          "path": "company.name",
+          "required": true,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 5,
+                "max": 150
+              }
+            }
+          ]
+        },
+        {
+          "path": "company.address",
+          "required": true,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 5,
+                "max": 150
+              }
+            }
+          ]
+        },
+        {
+          "path": "company.type", // Need to be enum confirm from fe
+          "required": true,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 5,
+                "max": 150
+              }
+            }
+          ]
+        },
+        {
+          "path": "company.registrationNumber",
+          "required": true,
+          "validations": [
+            {
+              "type": "length",
               "params": {
                 "min": 0,
                 "max": 100
