@@ -39852,6 +39852,12 @@
 			"tenantId": "ch"
 		},
 		{
+			"rolecode": "APRO",
+			"actionid": "21810",
+			"actioncode": "",
+			"tenantId": "ch"
+		},
+		{
 			"rolecode": "RP_CLERK",
 			"actionid": "4084",
 			"actioncode": "",
@@ -39866,51 +39872,51 @@
 		
 		{
 			"rolecode": "EMPLOYEE",
-			"actionid": 3000,
+			"actionid": 2930,
 			"actioncode": "",
 			"tenantId": "ch"
 		},
 		{
 			"rolecode": "EMPLOYEE",
-			"actionid": 3001,
+			"actionid": 2931,
 			"actioncode": "",
 			"tenantId": "ch"
 		},
 		{
 			"rolecode": "EMPLOYEE",
-			"actionid": 3002,
+			"actionid": 2932,
 			"actioncode": "",
 			"tenantId": "ch"
 		},
 		{
 			"rolecode": "EMPLOYEE",
-			"actionid": 3003,
+			"actionid": 2933,
 			"actioncode": "",
 			"tenantId": "ch"
 		},
 		{
 			"rolecode": "EMPLOYEE",
-			"actionid": 3004,
-			"actioncode": "",
-			"tenantId": "ch"
-		},
-		
-		{
-			"rolecode": "EMPLOYEE",
-			"actionid": 3005,
+			"actionid": 2934,
 			"actioncode": "",
 			"tenantId": "ch"
 		},
 		
 		{
 			"rolecode": "EMPLOYEE",
-			"actionid": 3006,
+			"actionid": 2935,
+			"actioncode": "",
+			"tenantId": "ch"
+		},
+		
+		{
+			"rolecode": "EMPLOYEE",
+			"actionid": 2936,
 			"actioncode": "",
 			"tenantId": "ch"
 		},
 		{
 			"rolecode": "EMPLOYEE",
-			"actionid": 3007,
+			"actionid": 2937,
 			"actioncode": "",
 			"tenantId": "ch"
 		},
