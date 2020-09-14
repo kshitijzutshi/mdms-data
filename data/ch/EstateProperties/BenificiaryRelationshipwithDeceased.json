@@ -1,0 +1,36 @@
+{
+    "tenantId": "ch",
+    "moduleName": "EstatePropertyService",
+    "BenificiaryRelationshipwithDeceased": [
+      {
+        "name": "Mother",
+        "code": "BENIFICIARY_RELATIONSHIP_WITH_DECEASED.MOTHER",
+        "active": true
+      },
+      {
+        "name": "Father",
+        "code": "BENIFICIARY_RELATIONSHIP_WITH_DECEASED.FATHER",
+        "active": true
+      },
+      {
+        "name": "GrandMother",
+        "code": "BENIFICIARY_RELATIONSHIP_WITH_DECEASED.GRANDMOTHER",
+        "active": true
+      },
+      {
+        "name": "GrandFather",
+        "code": "BENIFICIARY_RELATIONSHIP_WITH_DECEASED.GRANDFATHER",
+        "active": true
+      },
+      {
+        "name": "Brother",
+        "code": "BENIFICIARY_RELATIONSHIP_WITH_DECEASED.BROTHER",
+        "active": true
+      },
+      {
+        "name": "Sister",
+        "code": "BENIFICIARY_RELATIONSHIP_WITH_DECEASED.SISTER",
+        "active": true
+      }
+    ]
+  }
