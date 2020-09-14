@@ -16755,7 +16755,7 @@
       "enabled": true,
       "serviceCode": "RP",
       "code": "null",
-      "path": "RentedProperties.Rented Properties Reports.OwnerShipTransferApplicationStatusReport",
+      "path": "RentedProperties.Application Status Reports.OwnerShipTransferApplicationStatusReport",
       "navigationURL": "report/rainmaker-rp/OTApplicationStatusReport",
       "leftIcon": "action:assignment",
       "rightIcon": ""
@@ -16794,7 +16794,7 @@
       "enabled": true,
       "serviceCode": "RP",
       "code": "null",
-      "path": "RentedProperties.Rented Properties Reports.DuplicateCopyApplicationStatusReport",
+      "path": "RentedProperties.Application Status Reports.DuplicateCopyApplicationStatusReport",
       "navigationURL": "report/rainmaker-rp/DCApplicationStatusReport",
       "leftIcon": "action:assignment",
       "rightIcon": ""
@@ -16833,7 +16833,7 @@
       "enabled": true,
       "serviceCode": "RP",
       "code": "null",
-      "path": "RentedProperties.Rented Properties Reports.MortgageApplicationStatusReport",
+      "path": "RentedProperties.Application Status Reports.MortgageApplicationStatusReport",
       "navigationURL": "report/rainmaker-rp/MGApplicationStatusReport",
       "leftIcon": "action:assignment",
       "rightIcon": ""
@@ -16872,7 +16872,7 @@
       "enabled": true,
       "serviceCode": "RP",
       "code": "null",
-      "path": "RentedProperties.Rented Properties Reports.OTCollectionReport",
+      "path": "RentedProperties.Payment and Collection Reports.OTCollectionReport",
       "navigationURL": "report/rainmaker-rp/OTCollectionReport",
       "leftIcon": "action:assignment",
       "rightIcon": ""
@@ -16911,7 +16911,7 @@
       "enabled": true,
       "serviceCode": "RP",
       "code": "null",
-      "path": "RentedProperties.Rented Properties Reports.DCCollectionReport",
+      "path": "RentedProperties.Payment and Collection Reports.DCCollectionReport",
       "navigationURL": "report/rainmaker-rp/DCCollectionReport",
       "leftIcon": "action:assignment",
       "rightIcon": ""
@@ -16951,7 +16951,7 @@
       "enabled": true,
       "serviceCode": "RP",
       "code": "null",
-      "path": "RentedProperties.Rented Properties Reports.RPRentCollectionReport",
+      "path": "RentedProperties.Payment and Collection Reports.RPRentCollectionReport",
       "navigationURL": "report/rainmaker-rp/RPRentCollectionReport",
       "leftIcon": "action:assignment",
       "rightIcon": ""
