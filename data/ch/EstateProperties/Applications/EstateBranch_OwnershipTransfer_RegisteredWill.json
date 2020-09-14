@@ -1,23 +1,9 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OwnershipTransfer_SaleDeed": [
+  "EstateBranch_OwnershipTransfer_RegisteredWill": [
     {
       "fields": [
-        {
-          "path": "modeOfTransfer",
-          "required": true,
-          "validations": [
-            {
-              "type": "mdms",
-              "params": {
-                "moduleName": "EstatePropertyService",
-                "masterName": "modeOfTransfer",
-                "filter": "modeOfTransfer..code"
-              }
-            }
-          ]
-        },
         {
           "path": "registrationNumber",
           "required": true,
@@ -51,6 +37,25 @@
           ]
         },
         {
+          "path": "dateOfExecutionOfWill",
+          "required": true,
+          "validations": [
+            {
+              "type": "date-range",
+              "params": {
+                "start": {
+                  "unit": "year",
+                  "value": -40
+                },
+                "end": {
+                  "unit": "second",
+                  "value": 0
+                }
+              }
+            }
+          ]
+        },
+        {
           "path": "transferor",
           "required": true,
           "validations": [
@@ -64,16 +69,47 @@
           "required": true,
           "validations": [
             {
-              "type": "onwer"
+              "type": "owner"
+            }
+          ]
+        },
+        {
+          "path": "transferor.dateOfDeath",
+          "required": true,
+          "validations": [
+            {
+              "type": "date-range",
+              "params": {
+                "start": {
+                  "unit": "year",
+                  "value": -40
+                },
+                "end": {
+                  "unit": "second",
+                  "value": 0
+                }
+              }
             }
           ]
         },
         {
           "path": "transferee",
-          "required": true,
+          "required": false,
           "validations": [
             {
               "type": "object"
+            }
+          ]
+        },
+        {
+          "path": "transferee.legalHeirOrbeneficiary",
+          "required": true,
+          "validations": [
+            {
+              "type": "enum",
+              "params": {
+                "values": ["LEGALHEIR", "BENEFICIARY"]
+              }
             }
           ]
         },
@@ -100,14 +136,17 @@
           ]
         },
         {
-          "path": "transferee.fatherOrHusbandName",
+          "path": "transferee.age",
           "required": true,
           "validations": [
             {
-              "type": "length",
+              "type": "numeric"
+            },
+            {
+              "type": "minmax",
               "params": {
-                "min": 5,
-                "max": 150
+                "min": 0,
+                "max": 100
               }
             }
           ]
@@ -125,8 +164,21 @@
           ]
         },
         {
-          "path": "transferee.address",
+          "path": "transferee.relationWithDeceased",
           "required": true,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 3,
+                "max": 50
+              }
+            }
+          ]
+        },
+        {
+          "path": "transferee.address",
+          "required": false,
           "validations": [
             {
               "type": "length",
@@ -158,6 +210,66 @@
               "params": {
                 "min": 0,
                 "max": 100
+              }
+            }
+          ]
+        },
+        {
+          "path": "witness",
+          "required": true,
+          "validations": [
+            {
+              "type": "object"
+            }
+          ]
+        },
+        {
+          "path": "witness.name",
+          "required": true,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 5,
+                "max": 150
+              }
+            }
+          ]
+        },
+        {
+          "path": "witness.age",
+          "required": true,
+          "validations": [
+            {
+              "type": "numeric"
+            },
+            {
+              "type": "minmax",
+              "params": {
+                "min": 0,
+                "max": 100
+              }
+            }
+          ]
+        },
+        {
+          "path": "witness.mobileNo",
+          "required": false,
+          "validations": [
+            {
+              "type": "mobile"
+            }
+          ]
+        },
+        {
+          "path": "witness.address",
+          "required": true,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 5,
+                "max": 150
               }
             }
           ]

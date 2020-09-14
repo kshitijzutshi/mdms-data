@@ -1,11 +1,11 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OwnershipTransfer_SaleDeed": [
+  "EstateBranch_OtherCitizen_Mortgage": [
     {
       "fields": [
         {
-          "path": "modeOfTransfer",
+          "path": "typeOfMortgage", // this need to be an enum and to br confirmed by fe
           "required": true,
           "validations": [
             {
@@ -19,39 +19,7 @@
           ]
         },
         {
-          "path": "registrationNumber",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 0,
-                "max": 100
-              }
-            }
-          ]
-        },
-        {
-          "path": "dateOfRegistration",
-          "required": true,
-          "validations": [
-            {
-              "type": "date-range",
-              "params": {
-                "start": {
-                  "unit": "year",
-                  "value": -40
-                },
-                "end": {
-                  "unit": "second",
-                  "value": 0
-                }
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferor",
+          "path": "owner",
           "required": true,
           "validations": [
             {
@@ -60,26 +28,8 @@
           ]
         },
         {
-          "path": "transferor.id",
+          "path": "owner.id",
           "required": true,
-          "validations": [
-            {
-              "type": "onwer"
-            }
-          ]
-        },
-        {
-          "path": "transferee",
-          "required": true,
-          "validations": [
-            {
-              "type": "object"
-            }
-          ]
-        },
-        {
-          "path": "transferee.id",
-          "required": false,
           "validations": [
             {
               "type": "owner"
@@ -87,7 +37,16 @@
           ]
         },
         {
-          "path": "transferee.name",
+          "path": "loan",
+          "required": true,
+          "validations": [
+            {
+              "type": "object"
+            }
+          ]
+        },
+        {
+          "path": "loan.nameOfBank",
           "required": true,
           "validations": [
             {
@@ -100,7 +59,7 @@
           ]
         },
         {
-          "path": "transferee.fatherOrHusbandName",
+          "path": "loan.purpose",
           "required": true,
           "validations": [
             {
@@ -113,52 +72,11 @@
           ]
         },
         {
-          "path": "transferee.relation",
-          "required": true,
-          "validations": [
-            {
-              "type": "enum",
-              "params": {
-                "values": ["FATHER", "HUSBAND"]
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.address",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 5,
-                "max": 150
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.mobileNo",
-          "required": false,
-          "validations": [
-            {
-              "type": "mobile"
-            }
-          ]
-        },
-        {
-          "path": "transferee.percentageOfShareTransferred",
+          "path": "loan.amount",
           "required": true,
           "validations": [
             {
               "type": "numeric"
-            },
-            {
-              "type": "minmax",
-              "params": {
-                "min": 0,
-                "max": 100
-              }
             }
           ]
         },

@@ -1,55 +1,9 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OwnershipTransfer_SaleDeed": [
+  "EstateBranch_OtherCitizen_NOC": [
     {
       "fields": [
-        {
-          "path": "modeOfTransfer",
-          "required": true,
-          "validations": [
-            {
-              "type": "mdms",
-              "params": {
-                "moduleName": "EstatePropertyService",
-                "masterName": "modeOfTransfer",
-                "filter": "modeOfTransfer..code"
-              }
-            }
-          ]
-        },
-        {
-          "path": "registrationNumber",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 0,
-                "max": 100
-              }
-            }
-          ]
-        },
-        {
-          "path": "dateOfRegistration",
-          "required": true,
-          "validations": [
-            {
-              "type": "date-range",
-              "params": {
-                "start": {
-                  "unit": "year",
-                  "value": -40
-                },
-                "end": {
-                  "unit": "second",
-                  "value": 0
-                }
-              }
-            }
-          ]
-        },
         {
           "path": "transferor",
           "required": true,
@@ -64,12 +18,12 @@
           "required": true,
           "validations": [
             {
-              "type": "onwer"
+              "type": "owner"
             }
           ]
         },
         {
-          "path": "transferee",
+          "path": "nocDetails",
           "required": true,
           "validations": [
             {
@@ -78,16 +32,7 @@
           ]
         },
         {
-          "path": "transferee.id",
-          "required": false,
-          "validations": [
-            {
-              "type": "owner"
-            }
-          ]
-        },
-        {
-          "path": "transferee.name",
+          "path": "nocDetails.favourOf",
           "required": true,
           "validations": [
             {
@@ -100,7 +45,7 @@
           ]
         },
         {
-          "path": "transferee.fatherOrHusbandName",
+          "path": "nocDetails.fatherOrHusbandName",
           "required": true,
           "validations": [
             {
@@ -113,7 +58,7 @@
           ]
         },
         {
-          "path": "transferee.relation",
+          "path": "nocDetails.relation",
           "required": true,
           "validations": [
             {
@@ -125,7 +70,7 @@
           ]
         },
         {
-          "path": "transferee.address",
+          "path": "nocDetails.address",
           "required": true,
           "validations": [
             {
@@ -138,7 +83,7 @@
           ]
         },
         {
-          "path": "transferee.mobileNo",
+          "path": "nocDetails.mobileNo",
           "required": false,
           "validations": [
             {
@@ -147,7 +92,7 @@
           ]
         },
         {
-          "path": "transferee.percentageOfShareTransferred",
+          "path": "nocDetails.percentageOfShareTransferred",
           "required": true,
           "validations": [
             {
@@ -285,3 +230,4 @@
     }
   ]
 }
+// Confirm the NOC details and close it.
