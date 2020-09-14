@@ -1,7 +1,7 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OwnershipTransfer_InstestateDeath": [
+  "EstateBranch_InternalServices_IssuanceOfNotice": [
     {
       "fields": [
         {
@@ -23,44 +23,7 @@
           ]
         },
         {
-          "path": "transferor.dateOfDeath",
-          "required": true,
-          "validations": [
-            {
-              "type": "date-range",
-              "params": {
-                "start": {
-                  "unit": "year",
-                  "value": -40
-                },
-                "end": {
-                  "unit": "second",
-                  "value": 0
-                }
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee",
-          "required": true,
-          "validations": [
-            {
-              "type": "object"
-            }
-          ]
-        },
-        {
-          "path": "transferee.id",
-          "required": false,
-          "validations": [
-            {
-              "type": "owner"
-            }
-          ]
-        },
-        {
-          "path": "transferee.name",
+          "path": "violationDetails",
           "required": true,
           "validations": [
             {
@@ -73,99 +36,7 @@
           ]
         },
         {
-          "path": "transferee.age",
-          "required": true,
-          "validations": [
-            {
-              "type": "numeric"
-            },
-            {
-              "type": "minmax",
-              "params": {
-                "min": 0,
-                "max": 100
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.fatherOrHusbandName",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 5,
-                "max": 150
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.relation",
-          "required": true,
-          "validations": [
-            {
-              "type": "enum",
-              "params": {
-                "values": ["FATHER", "HUSBAND"]
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.relationWithDeceased",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 3,
-                "max": 50
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.address",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 5,
-                "max": 150
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.mobileNo",
-          "required": false,
-          "validations": [
-            {
-              "type": "mobile"
-            }
-          ]
-        },
-        {
-          "path": "transferee.percentageOfShareTransferred",
-          "required": true,
-          "validations": [
-            {
-              "type": "numeric"
-            },
-            {
-              "type": "minmax",
-              "params": {
-                "min": 0,
-                "max": 100
-              }
-            }
-          ]
-        },
-        {
-          "path": "documentsReceivedDate",
+          "path": "violationDate",
           "required": false,
           "validations": [
             {
@@ -173,7 +44,7 @@
               "params": {
                 "start": {
                   "unit": "year",
-                  "value": -1
+                  "value": -10
                 },
                 "end": {
                   "unit": "second",

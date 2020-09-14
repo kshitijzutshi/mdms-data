@@ -1,7 +1,7 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OwnershipTransfer_InstestateDeath": [
+  "EstateBranch_OtherCitizen_ScfToSco": [
     {
       "fields": [
         {
@@ -23,26 +23,7 @@
           ]
         },
         {
-          "path": "transferor.dateOfDeath",
-          "required": true,
-          "validations": [
-            {
-              "type": "date-range",
-              "params": {
-                "start": {
-                  "unit": "year",
-                  "value": -40
-                },
-                "end": {
-                  "unit": "second",
-                  "value": 0
-                }
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee",
+          "path": "company",
           "required": true,
           "validations": [
             {
@@ -51,16 +32,7 @@
           ]
         },
         {
-          "path": "transferee.id",
-          "required": false,
-          "validations": [
-            {
-              "type": "owner"
-            }
-          ]
-        },
-        {
-          "path": "transferee.name",
+          "path": "company.name",
           "required": true,
           "validations": [
             {
@@ -73,23 +45,7 @@
           ]
         },
         {
-          "path": "transferee.age",
-          "required": true,
-          "validations": [
-            {
-              "type": "numeric"
-            },
-            {
-              "type": "minmax",
-              "params": {
-                "min": 0,
-                "max": 100
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.fatherOrHusbandName",
+          "path": "company.address",
           "required": true,
           "validations": [
             {
@@ -102,64 +58,27 @@
           ]
         },
         {
-          "path": "transferee.relation",
-          "required": true,
-          "validations": [
-            {
-              "type": "enum",
-              "params": {
-                "values": ["FATHER", "HUSBAND"]
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.relationWithDeceased",
+          "path": "company.registrationNumber",
           "required": true,
           "validations": [
             {
               "type": "length",
               "params": {
-                "min": 3,
+                "min": 5,
                 "max": 50
               }
             }
           ]
         },
         {
-          "path": "transferee.address",
+          "path": "company.type",// enum from fe
           "required": true,
           "validations": [
             {
               "type": "length",
               "params": {
                 "min": 5,
-                "max": 150
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.mobileNo",
-          "required": false,
-          "validations": [
-            {
-              "type": "mobile"
-            }
-          ]
-        },
-        {
-          "path": "transferee.percentageOfShareTransferred",
-          "required": true,
-          "validations": [
-            {
-              "type": "numeric"
-            },
-            {
-              "type": "minmax",
-              "params": {
-                "min": 0,
-                "max": 100
+                "max": 50
               }
             }
           ]

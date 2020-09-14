@@ -64,7 +64,7 @@
           "required": true,
           "validations": [
             {
-              "type": "transferor"
+              "type": "owner"
             }
           ]
         },
@@ -82,7 +82,7 @@
           "required": false,
           "validations": [
             {
-              "type": "transferee"
+              "type": "owner"
             }
           ]
         },
