@@ -10465,6 +10465,30 @@
       "path": ""
     },
     {
+      "id": 1573,
+      "name": "PGService Initiate Refund",
+      "url": "/pg-service/transaction/v1/_refund",
+      "displayName": "Initiate Refund",
+      "orderNumber": 0,
+      "parentModule": "",
+      "enabled": true,
+      "serviceCode": "pg-service",
+      "code": "null",
+      "path": ""
+    },
+    {
+      "id": 1574,
+      "name": "PGService Update Refund",
+      "url": "/pg-service/transaction/v1/_updateRefund",
+      "displayName": "Update Refund",
+      "orderNumber": 0,
+      "parentModule": "",
+      "enabled": true,
+      "serviceCode": "pg-service",
+      "code": "null",
+      "path": ""
+    },
+    {
       "id": 9999,
       "name": "PGR LME Report",
       "url": "/customization/protected/reports/lmereport",
@@ -13353,7 +13377,7 @@
       "url": "card"
     },
     {
-      "id": 3000,
+      "id": 30000,
       "name": "CreatePropertyMasterApi",
       "url": "/est-services/property-master/_create",
       "displayName": "Create Property Master api",
@@ -13365,7 +13389,7 @@
       "path": "CreatePropertyMasterApi"
     },
     {
-      "id": 3001,
+      "id": 30001,
       "name": "SearchPropertyMasterApi",
       "url": "/est-services/property-master/_search",
       "displayName": "Search Property Master api",
@@ -13377,7 +13401,7 @@
       "path": "SearchPropertyMasterApi"
     },
     {
-      "id": 3002,
+      "id": 30002,
       "name": "UpdatePropertyMasterApi",
       "url": "/est-services/property-master/_update",
       "displayName": "Update Property Master api",
@@ -13389,7 +13413,7 @@
       "path": "UpdatePropertyMasterApi"
     },
     {
-      "id": 3003,
+      "id": 30003,
       "name": "CreateApplicationApi",
       "url": "/est-services/application/_create",
       "displayName": "Create Application api",
@@ -13401,7 +13425,7 @@
       "path": "CreateApplicationApi"
     },
       {
-      "id": 3004,
+      "id": 30004,
       "name": "SearchApplicationApi",
       "url": "/est-services/application/_search",
       "displayName": "Search Application API",
@@ -13413,7 +13437,7 @@
       "path": "SearchApplicationApi"
     },
       {
-      "id": 3005,
+      "id": 30005,
       "name": "UpdateApplicationApi",
       "url": "/est-services/application/_update",
       "displayName": "Update Application API",
@@ -16725,6 +16749,18 @@
       "id": 4084,
       "name": "OfflineRentPayment",
       "url": "/rp-services/property/_payrent",
+      "displayName": "update capturing transite site images api",
+      "orderNumber": 0,
+      "parentModule": "",
+      "enabled": true,
+      "serviceCode": "CapturingTransiteSiteImagesApi",
+      "code": "null",
+      "path": "UpdateCapturingTransiteSiteImagesApi"
+    },
+    {
+      "id": 4085,
+      "name": "AccountStatementXL",
+      "url": "/rp-services/property/_accountstatementxlsx",
       "displayName": "update capturing transite site images api",
       "orderNumber": 0,
       "parentModule": "",
@@ -21282,6 +21318,36 @@
 		"rightIcon": ""
 	},
 	{
+		"id": 4564,
+		"name": "Registration of Vendor",
+		"url": "url",
+		"displayName": "Registration of Vendor",
+		"orderNumber": 5,
+		"parentModule": "rainmaker-nulm",
+		"enabled": true,
+		"serviceCode": "NULM",
+		"code": "null",
+		"path": "NULM.SUSV Program.Registration of Vendor",
+		"navigationURL": "egov-nulm/search-susv",
+		"leftIcon": "action:assignment",
+		"rightIcon": ""
+	},
+	{
+		"id": 4565,
+		"name": "Transaction Tracking",
+		"url": "url",
+		"displayName": "Transaction Tracking",
+		"orderNumber": 5,
+		"parentModule": "rainmaker-nulm",
+		"enabled": true,
+		"serviceCode": "NULM",
+		"code": "null",
+		"path": "NULM.SUSV Program.Transaction Tracking",
+		"navigationURL": "egov-nulm/search-susv-transaction",
+		"leftIcon": "action:assignment",
+		"rightIcon": ""
+	},
+	{
 		"id": 4557,
 		"name": "Create Estimate",
 		"url": "services/works/estimatePreparation/newform",
@@ -21291,7 +21357,7 @@
 		"enabled": true,
 		"serviceCode": "works",
 		"code": "",
-		"path": "Works.Create Estimate",
+		"path": "Works.Estimate.Create Estimate",
 		"navigationURL": "services/works/estimatePreparation/newform",
 		"leftIcon": "editor:insert-chart"
 	},
@@ -21305,7 +21371,7 @@
 		"enabled": true,
 		"serviceCode": "works",
 		"code": "",
-		"path": "Works.Search Estimate",
+		"path": "Works.Estimate.Search Estimate",
 		"navigationURL": "services/works/estimatePreparation/formnew",
 		"leftIcon": "editor:insert-chart"
 	},
@@ -21319,7 +21385,7 @@
 		"enabled": true,
 		"serviceCode": "works",
 		"code": "",
-		"path": "Works.Create Tender",
+		"path": "Works.Tender.Create Tender",
 		"navigationURL": "services/works/tenderProcurement/newform",
 		"leftIcon": "editor:insert-chart"
 	},
@@ -21333,7 +21399,7 @@
 		"enabled": true,
 		"serviceCode": "works",
 		"code": "",
-		"path": "Works.Search Tender",
+		"path": "Works.Tender.Search Tender",
 		"navigationURL": "services/works/tenderProcurement/search",
 		"leftIcon": "editor:insert-chart"
 	},
@@ -21347,7 +21413,7 @@
 		"enabled": true,
 		"serviceCode": "works",
 		"code": "",
-		"path": "Works.Create BG",
+		"path": "Works.BG.Create BG",
 		"navigationURL": "services/works/bgSecurity/newform",
 		"leftIcon": "editor:insert-chart"
 	},
@@ -21361,7 +21427,7 @@
 		"enabled": true,
 		"serviceCode": "works",
 		"code": "",
-		"path": "Works.Search BG",
+		"path": "Works.BG.Search BG",
 		"navigationURL": "services/works/bgSecurity/search",
 		"leftIcon": "editor:insert-chart"
 	},
@@ -21885,17 +21951,145 @@
       "code": "null",
       "path": ""
     },
-    {
-      "id": 5045,
-      "name": "AccountStatementExcelGenerationApi",
-      "url": "/rp-services/property/_accountstatementxlsx",
-      "displayName": "Account Statement Excel Generation API",
-      "orderNumber": 0,
-      "parentModule": "",
-      "enabled": true,
-      "serviceCode": "AccountStatementExcelGenerationApi",
-      "code": "null",
-      "path": "AccountStatementExcelGenerationApi"
-    }
+	{
+		"id": 5045,
+		"name": "Create Work Agreement",
+		"url": "services/works/workEstimate/newform",
+		"displayName": "Create Work Agreement",
+		"orderNumber": "5",
+		"parentModule": "works",
+		"enabled": true,
+		"serviceCode": "works",
+		"code": "",
+		"path": "Works.Work Agreement.Create Work Agreement",
+		"navigationURL": "services/works/workEstimate/newform",
+		"leftIcon": "editor:insert-chart"
+	},
+	{
+		"id": 5046,
+		"name": "Create Blank Work Agreement",
+		"url": "services/works/boq/newform",
+		"displayName": "Create Blank Work Agreement",
+		"orderNumber": "5",
+		"parentModule": "works",
+		"enabled": true,
+		"serviceCode": "works",
+		"code": "",
+		"path": "Works.Work Agreement.Create Blank Work Agreement",
+		"navigationURL": "services/works/boq/newform",
+		"leftIcon": "editor:insert-chart"
+	},
+	{
+		"id": 5047,
+		"name": "Search Work Agreement",
+		"url": "services/works/boq/search",
+		"displayName": "Search Work Agreement",
+		"orderNumber": "5",
+		"parentModule": "works",
+		"enabled": true,
+		"serviceCode": "works",
+		"code": "",
+		"path": "Works.Work Agreement.Search Work Agreement",
+		"navigationURL": "services/works/boq/search",
+		"leftIcon": "editor:insert-chart"
+	},
+	{
+		"id": 5048,
+		"name": "Work Agreement Modification",
+		"url": "services/works/boq/closuresearch",
+		"displayName": "Work Agreement Modification",
+		"orderNumber": "5",
+		"parentModule": "works",
+		"enabled": true,
+		"serviceCode": "works",
+		"code": "",
+		"path": "Works.Work Agreement.Work Agreement Modification",
+		"navigationURL": "services/works/boq/closuresearch",
+		"leftIcon": "editor:insert-chart"
+	},
+	{
+		"id": 5049,
+		"name": "Create Contractor",
+		"url": "services/EGF/contractor/newform",
+		"displayName": "Create Contractor",
+		"orderNumber": "5",
+		"parentModule": "works",
+		"enabled": true,
+		"serviceCode": "works",
+		"code": "",
+		"path": "Works.Master.Create Contractor",
+		"navigationURL": "services/EGF/contractor/newform",
+		"leftIcon": "editor:insert-chart"
+	},
+	{
+		"id": 5050,
+		"name": "View Contractor",
+		"url": "services/EGF/contractor/search/view",
+		"displayName": "View Contractor",
+		"orderNumber": "5",
+		"parentModule": "works",
+		"enabled": true,
+		"serviceCode": "works",
+		"code": "",
+		"path": "Works.Master.View Contractor",
+		"navigationURL": "services/EGF/contractor/search/view",
+		"leftIcon": "editor:insert-chart"
+	},
+	{
+		"id": 5051,
+		"name": "Modify Contractor",
+		"url": "services/EGF/contractor/search/edit",
+		"displayName": "Modify Contractor",
+		"orderNumber": "5",
+		"parentModule": "works",
+		"enabled": true,
+		"serviceCode": "works",
+		"code": "",
+		"path": "Works.Master.Modify Contractor",
+		"navigationURL": "services/EGF/contractor/search/edit",
+		"leftIcon": "editor:insert-chart"
+	},
+	{
+		"id": 5052,
+		"name": "Create Payment Request",
+		"url": "services/EGF/contractorbill/newform",
+		"displayName": "Create Payment Request",
+		"orderNumber": "5",
+		"parentModule": "works",
+		"enabled": true,
+		"serviceCode": "works",
+		"code": "",
+		"path": "Works.Create Payment Request",
+		"navigationURL": "services/EGF/contractorbill/newform",
+		"leftIcon": "editor:insert-chart"
+	},
+	{
+		"id": 5053,
+		"name": "Estimate",
+		"url": "services/works/searchEstimate/estimateApprovalSearch",
+		"displayName": "Estimate",
+		"orderNumber": "5",
+		"parentModule": "works",
+		"enabled": true,
+		"serviceCode": "works",
+		"code": "",
+		"path": "Works.MIS.Estimate",
+		"navigationURL": "services/works/searchEstimate/estimateApprovalSearch",
+		"leftIcon": "editor:insert-chart"
+	},
+	{
+		"id": 5054,
+		"name": "Work Agreement",
+		"url": "services/works/searchEstimate/workOrderSearch",
+		"displayName": "Work Agreement",
+		"orderNumber": "5",
+		"parentModule": "works",
+		"enabled": true,
+		"serviceCode": "works",
+		"code": "",
+		"path": "Works.MIS.Work Agreement",
+		"navigationURL": "services/works/searchEstimate/workOrderSearch",
+		"leftIcon": "editor:insert-chart"
+	}
   ]
 }

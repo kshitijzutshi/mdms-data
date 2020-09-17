@@ -534,6 +534,11 @@
       "description": "Employee who verifies the Trasit site and uploads the documents for capturing transite site images"
     },
     {
+      "code": "RP_APRO",
+      "name": "APRO",
+      "description": "Employee who manages the public relations for transit sites for rented properties"
+    },
+    {
       "code": "SI",
       "name": "SI",
       "description": "Sanitary Inspector"
@@ -1061,6 +1066,41 @@
       "code": "PAYMENT_PROCESSING_AUTHORITY",
       "name": "PARK AND COMMUNITY PAYMENT PROCESSING AUTHORITY",
       "description": "Employee PAYMENT PROCESSING AUTHORITY"
+    },
+    {
+		"code": "WORKS_WORK_AGREEMENT",
+		"name": "WORKS_WORK_AGREEMENT",
+		"description": "WORKS_WORK_AGREEMENT"
+    },
+    {
+		"code": "WORKS_MASTER",
+		"name": "WORKS_MASTER",
+		"description": "WORKS_MASTER"
+    },
+    {
+		"code": "WORKS_MIS",
+		"name": "WORKS_MIS",
+		"description": "WORKS_MIS"
+    },
+    {
+		"code": "WORKS_BILL",
+		"name": "WORKS_BILL",
+		"description": "WORKS_BILL"
+    },
+	{
+      "code": "NULMJA",
+      "name": "Junior Assistant",
+      "description": "NULM Junior Assistant"
+    },
+	{
+      "code": "NULMSDO",
+      "name": "SDO",
+      "description": "NULM SDO"
+    },
+	{
+      "code": "NULMACMC",
+      "name": "ACMC",
+      "description": "NULM ACMC"
     }
   ]
 }
