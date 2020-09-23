@@ -103,6 +103,17 @@
       "demandUpdateTime": 604800000,
       "isVoucherCreationEnabled": true
     },
+    {
+			"businessService": "EB-OT-SaleDeed",
+			"code": "EB-OT-SaleDeed",
+			"collectionModesNotAllowed": [
+				"DD"
+			],
+			"partPaymentAllowed": false,
+			"isAdvanceAllowed": false,
+			"demandUpdateTime": 604800000,
+			"isVoucherCreationEnabled": true
+		},
 	  {
       "businessService": "WaterCharges.Metered",
       "code": "WaterCharges.Metered",
