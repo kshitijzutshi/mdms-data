@@ -23,14 +23,15 @@
             ]
           },
           {
-            "path": "bookNumber",
-            "required": false,
+            "path": "typeOfLetter",
+            "required": true,
             "validations": [
               {
-                "type": "length",
+                "type": "mdms",
                 "params": {
-                  "min": 0,
-                  "max": 100
+                  "moduleName": "EstatePropertyService",
+                  "masterName": "typeOfLetter",
+                  "filter": "typeOfLetter..code"
                 }
               }
             ]
