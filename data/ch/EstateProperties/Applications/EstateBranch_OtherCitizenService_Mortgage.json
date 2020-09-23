@@ -1,86 +1,29 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OwnershipTransfer_InstestateDeath": [
+  "EstateBranch_OtherCitizenService_Mortgage": [
     {
       "fields": [
         {
-          "path": "transferor",
+          "path": "mortgageType",
           "required": true,
           "validations": [
             {
-              "type": "object"
-            }
-          ]
-        },
-        {
-          "path": "transferor.id",
-          "required": true,
-          "validations": [
-            {
-              "type": "owner"
-            }
-          ]
-        },
-        {
-          "path": "transferor.dateOfDeath",
-          "required": true,
-          "validations": [
-            {
-              "type": "date-range",
+              "type": "mdms",
               "params": {
-                "start": {
-                  "unit": "year",
-                  "value": -40
-                },
-                "end": {
-                  "unit": "second",
-                  "value": 0
-                }
+                "moduleName": "EstatePropertyService",
+                "masterName": "permissionToMortagage",
+                "filter": "permissionToMortagage..code"
               }
             }
           ]
         },
         {
-          "path": "transferee",
-          "required": true,
-          "validations": [
-            {
-              "type": "object"
-            }
-          ]
-        },
-        {
-          "path": "transferee.id",
+          "path": "bookNumber",
           "required": false,
           "validations": [
             {
-              "type": "owner"
-            }
-          ]
-        },
-        {
-          "path": "transferee.name",
-          "required": true,
-          "validations": [
-            {
               "type": "length",
-              "params": {
-                "min": 5,
-                "max": 150
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.age",
-          "required": true,
-          "validations": [
-            {
-              "type": "numeric"
-            },
-            {
-              "type": "minmax",
               "params": {
                 "min": 0,
                 "max": 100
@@ -89,7 +32,25 @@
           ]
         },
         {
-          "path": "transferee.fatherOrHusbandName",
+          "path": "owner",
+          "required": true,
+          "validations": [
+            {
+              "type": "object"
+            }
+          ]
+        },
+        {
+          "path": "owner.id",
+          "required": true,
+          "validations": [
+            {
+              "type": "owner"
+            }
+          ]
+        },
+        {
+          "path": "bankName",
           "required": true,
           "validations": [
             {
@@ -102,32 +63,7 @@
           ]
         },
         {
-          "path": "transferee.relation",
-          "required": true,
-          "validations": [
-            {
-              "type": "enum",
-              "params": {
-                "values": ["FATHER", "HUSBAND"]
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.relationWithDeceased",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 3,
-                "max": 50
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.address",
+          "path": "reasonForMortgage",
           "required": true,
           "validations": [
             {
@@ -140,27 +76,11 @@
           ]
         },
         {
-          "path": "transferee.mobileNo",
-          "required": false,
-          "validations": [
-            {
-              "type": "mobile"
-            }
-          ]
-        },
-        {
-          "path": "transferee.percentageOfShareTransferred",
+          "path": "loanAmount",
           "required": true,
           "validations": [
             {
               "type": "numeric"
-            },
-            {
-              "type": "minmax",
-              "params": {
-                "min": 0,
-                "max": 100
-              }
             }
           ]
         },

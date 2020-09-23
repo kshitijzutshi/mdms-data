@@ -5,15 +5,28 @@
     {
       "fields": [
         {
-          "path": "modeOfTransfer", // Mode of transfer need to be updated by front end as enums
+          "path": "modeOfTransfer",
           "required": true,
           "validations": [
             {
               "type": "mdms",
               "params": {
                 "moduleName": "EstatePropertyService",
-                "masterName": "modeOfTransfer",
-                "filter": "modeOfTransfer..code"
+                "masterName": "patnershipModeOfTransfer",
+                "filter": "patnershipModeOfTransfer..code"
+              }
+            }
+          ]
+        },
+        {
+          "path": "bookNumber",
+          "required": false,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 0,
+                "max": 100
               }
             }
           ]
@@ -163,14 +176,15 @@
           ]
         },
         {
-          "path": "tradeType", // this need to be an enum and get details from frontend
+          "path": "tradeType",
           "required": true,
           "validations": [
             {
-              "type": "length",
+              "type": "mdms",
               "params": {
-                "min": 5,
-                "max": 150
+                "moduleName": "EstatePropertyService",
+                "masterName": "tradeOptedForChange",
+                "filter": "tradeOptedForChange..code"
               }
             }
           ]
@@ -211,14 +225,15 @@
           ]
         },
         {
-          "path": "company.type", // Need to be enum confirm from fe
+          "path": "company.type",
           "required": true,
           "validations": [
             {
-              "type": "length",
+              "type": "mdms",
               "params": {
-                "min": 5,
-                "max": 150
+                "moduleName": "EstatePropertyService",
+                "masterName": "companyDetails",
+                "filter": "companyDetails..code"
               }
             }
           ]

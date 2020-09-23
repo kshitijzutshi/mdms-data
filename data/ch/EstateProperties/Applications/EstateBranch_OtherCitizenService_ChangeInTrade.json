@@ -1,11 +1,51 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OtherCitizen_ScfToSco": [
+  "EstateBranch_OtherCitizenService_ChangeInTrade": [
     {
       "fields": [
         {
-          "path": "transferor",
+          "path": "bookNumber",
+          "required": false,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 0,
+                "max": 100
+              }
+            }
+          ]
+        },
+        {
+          "path": "changeInTrade",
+          "required": true,
+          "validations": [
+            {
+              "type": "mdms",
+              "params": {
+                "moduleName": "EstatePropertyService",
+                "masterName": "modeOfTransfer",
+                "filter": "modeOfTransfer..code"
+              }
+            }
+          ]
+        },
+        {
+          "path": "currentTrade",
+          "required": true,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 5,
+                "max": 150
+              }
+            }
+          ]
+        },
+        {
+          "path": "owner",
           "required": true,
           "validations": [
             {
@@ -14,72 +54,11 @@
           ]
         },
         {
-          "path": "transferor.id",
+          "path": "owner.id",
           "required": true,
           "validations": [
             {
               "type": "owner"
-            }
-          ]
-        },
-        {
-          "path": "company",
-          "required": true,
-          "validations": [
-            {
-              "type": "object"
-            }
-          ]
-        },
-        {
-          "path": "company.name",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 5,
-                "max": 150
-              }
-            }
-          ]
-        },
-        {
-          "path": "company.address",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 5,
-                "max": 150
-              }
-            }
-          ]
-        },
-        {
-          "path": "company.registrationNumber",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 5,
-                "max": 50
-              }
-            }
-          ]
-        },
-        {
-          "path": "company.type",// enum from fe
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 5,
-                "max": 50
-              }
             }
           ]
         },

@@ -1,23 +1,9 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OwnershipTransfer_FamilySettlement": [
+  "EstateBranch_OwnershipTransfer_IntestateDeath": [
     {
       "fields": [
-        {
-          "path": "modeOfTransfer",
-          "required": true,
-          "validations": [
-            {
-              "type": "mdms",
-              "params": {
-                "moduleName": "EstatePropertyService",
-                "masterName": "familySettlementModeOfTransfer",
-                "filter": "familySettlementModeOfTransfer..code"
-              }
-            }
-          ]
-        },
         {
           "path": "bookNumber",
           "required": false,
@@ -27,38 +13,6 @@
               "params": {
                 "min": 0,
                 "max": 100
-              }
-            }
-          ]
-        },
-        {
-          "path": "decreeDate",
-          "required": true,
-          "validations": [
-            {
-              "type": "date-range",
-              "params": {
-                "start": {
-                  "unit": "year",
-                  "value": -40
-                },
-                "end": {
-                  "unit": "second",
-                  "value": 0
-                }
-              }
-            }
-          ]
-        },
-        {
-          "path": "courtDetails",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 5,
-                "max": 250
               }
             }
           ]
@@ -82,20 +36,7 @@
           ]
         },
         {
-          "path": "registrationNumber",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 0,
-                "max": 100
-              }
-            }
-          ]
-        },
-        {
-          "path": "dateOfRegistration",
+          "path": "transferor.dateOfDeath",
           "required": true,
           "validations": [
             {
@@ -145,6 +86,22 @@
           ]
         },
         {
+          "path": "transferee.age",
+          "required": true,
+          "validations": [
+            {
+              "type": "numeric"
+            },
+            {
+              "type": "minmax",
+              "params": {
+                "min": 0,
+                "max": 100
+              }
+            }
+          ]
+        },
+        {
           "path": "transferee.fatherOrHusbandName",
           "required": true,
           "validations": [
@@ -166,6 +123,22 @@
               "params": {
                 "values": ["FATHER", "HUSBAND"]
               }
+            }
+          ]
+        },
+        {
+          "path": "transferee.relationWithDeceased",
+          "required": true,
+          "validations": [
+            {
+              "type": "mdms",
+              "params": [
+                {
+                  "moduleName": "EstatePropertyService",
+                  "masterName": "legaHeirRelationShipWithDeceased",
+                  "filter": "legaHeirRelationShipWithDeceased..code"
+                }
+              ]
             }
           ]
         },
@@ -330,4 +303,3 @@
     }
   ]
 }
-

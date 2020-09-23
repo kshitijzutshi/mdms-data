@@ -1,7 +1,7 @@
 {
     "tenantId": "ch",
     "moduleName": "EstatePropertyService",
-    "NoDueCertificteReason": [
+    "noDueCertificteReason": [
       {
         "name": "General purpose",
         "code": "NO_DUE_CERTIFICATE_REASON.GENERALPURPOSE",

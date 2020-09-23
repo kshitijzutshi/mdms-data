@@ -1,7 +1,7 @@
 {
     "tenantId": "ch",
     "moduleName": "EstatePropertyService",
-    "PermissionToMortagage": [
+    "permissionToMortagage": [
       {
         "name": "LeaseHold Property By Owner",
         "code": "PERMISSION_TO_MORTAGAGE.LEASEHOLD",
@@ -13,12 +13,12 @@
         "active": true
       },
       {
-        "name": "freehold property by Financial Institute",
-        "code": "]PERMISSION_TO_MORTAGAGE.FREEHOLDINSTITUTE",
+        "name": "Against Freehold property by Financial Institute",
+        "code": "PERMISSION_TO_MORTAGAGE.FREEHOLDINSTITUTE",
         "active": true
       },
       {
-        "name": "freehold property by Owner",
+        "name": "Against Freehold property by Owner",
         "code": "PERMISSION_TO_MORTAGAGE.FREEHOLDOWNER",
         "active": true
       }

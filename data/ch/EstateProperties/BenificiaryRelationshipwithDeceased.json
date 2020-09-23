@@ -1,7 +1,7 @@
 {
     "tenantId": "ch",
     "moduleName": "EstatePropertyService",
-    "BenificiaryRelationshipwithDeceased": [
+    "benificiaryRelationshipwithDeceased": [
       {
         "name": "Mother",
         "code": "BENIFICIARY_RELATIONSHIP_WITH_DECEASED.MOTHER",

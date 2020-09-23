@@ -24,6 +24,19 @@
           ]
         },
         {
+          "path": "bookNumber",
+          "required": false,
+          "validations": [
+            {
+              "type": "length",
+              "params": {
+                "min": 0,
+                "max": 100
+              }
+            }
+          ]
+        },
+        {
           "path": "transferor",
           "required": true,
           "validations": [
@@ -127,19 +140,6 @@
               "type": "enum",
               "params": {
                 "values": ["FATHER", "HUSBAND"]
-              }
-            }
-          ]
-        },
-        {
-          "path": "transferee.relationWithDeceased",
-          "required": true,
-          "validations": [
-            {
-              "type": "length",
-              "params": {
-                "min": 3,
-                "max": 50
               }
             }
           ]

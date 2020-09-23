@@ -1,25 +1,24 @@
 {
   "tenantId": "ch",
   "moduleName": "EstatePropertyService",
-  "EstateBranch_OtherCitizen_Mortgage": [
+  "EstateBranch_OtherCitizenService_ScfToSco": [
     {
       "fields": [
         {
-          "path": "typeOfMortgage", // this need to be an enum and to br confirmed by fe
-          "required": true,
+          "path": "bookNumber",
+          "required": false,
           "validations": [
             {
-              "type": "mdms",
+              "type": "length",
               "params": {
-                "moduleName": "EstatePropertyService",
-                "masterName": "modeOfTransfer",
-                "filter": "modeOfTransfer..code"
+                "min": 0,
+                "max": 100
               }
             }
           ]
         },
         {
-          "path": "owner",
+          "path": "transferor",
           "required": true,
           "validations": [
             {
@@ -28,7 +27,7 @@
           ]
         },
         {
-          "path": "owner.id",
+          "path": "transferor.id",
           "required": true,
           "validations": [
             {
@@ -37,8 +36,8 @@
           ]
         },
         {
-          "path": "loan",
-          "required": true,
+          "path": "company",
+          "required": false,
           "validations": [
             {
               "type": "object"
@@ -46,8 +45,8 @@
           ]
         },
         {
-          "path": "loan.nameOfBank",
-          "required": true,
+          "path": "company.name",
+          "required": false,
           "validations": [
             {
               "type": "length",
@@ -59,8 +58,8 @@
           ]
         },
         {
-          "path": "loan.purpose",
-          "required": true,
+          "path": "company.address",
+          "required": false,
           "validations": [
             {
               "type": "length",
@@ -72,11 +71,29 @@
           ]
         },
         {
-          "path": "loan.amount",
-          "required": true,
+          "path": "company.registrationNumber",
+          "required": false,
           "validations": [
             {
-              "type": "numeric"
+              "type": "length",
+              "params": {
+                "min": 5,
+                "max": 50
+              }
+            }
+          ]
+        },
+        {
+          "path": "company.type",
+          "required": false,
+          "validations": [
+            {
+              "type": "mdms",
+              "params": {
+                "moduleName": "EstatePropertyService",
+                "masterName": "companyDetails",
+                "filter": "companyDetails..code"
+              }
             }
           ]
         },

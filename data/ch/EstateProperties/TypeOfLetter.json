@@ -1,7 +1,7 @@
 {
     "tenantId": "ch",
     "moduleName": "EstatePropertyService",
-    "TypeOfLetter": [
+    "typeOfLetter": [
       {
         "name": "Allotment Letter",
         "code": "TYPE_OF_LETTER.ALLOTMENTLETTER",

@@ -1,7 +1,7 @@
 {
     "tenantId": "ch",
     "moduleName": "EstatePropertyService",
-    "CompanyDetails": [
+    "companyDetails": [
       {
         "name": "partnership",
         "code": "COMPANY_DETAILS.PARTNERSHIP",
