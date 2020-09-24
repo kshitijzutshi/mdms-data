@@ -383,6 +383,16 @@
       "isRequired": false
     }, 
     {
+      "category": "FEE",
+      "service": "EB-OT-SaleDeed",
+      "name": "EB-OT-SaleDeed",
+      "code": "EB-OT-SaleDeed_APPLICATION_FEE",
+      "isDebit": false,
+      "isActualDemand": true,
+      "order": "0",
+      "isRequired": false
+    },
+    {
       "category": "TAX",
       "service": "TL",
       "name": "tl roundoff",
