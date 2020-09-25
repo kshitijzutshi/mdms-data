@@ -508,6 +508,11 @@
       "name": "COMMISSIONER",
       "description": "Employee who verifies, rejects and approves the TL application which is approved by SI"
     },
+    {
+      "code": "CTL_ADMIN",
+      "name": "Trade License Admin",
+      "description": "Trade License Admin"
+    },	  
 	{
       "code": "RP_CLERK",
       "name": "CLERK",
@@ -542,6 +547,11 @@
       "code": "RP_APRO",
       "name": "APRO",
       "description": "Employee who manages the public relations for transit sites for rented properties"
+    },
+    {
+      "code": "RP_APPROVER",
+      "name": "RP Approver",
+      "description": "Employees who have access to Rented Properties Workflow"
     },
     {
       "code": "SI",
@@ -1136,6 +1146,21 @@
       "code": "EGF_BUDGET_VERIFIER_SO",
       "name": "EGF_BUDGET_VERIFIER_SO",
       "description": "EGF_BUDGET_VERIFIER_SO"
+    },
+	{
+      "code": "RTIADMIN",
+      "name": "RTIADMIN",
+      "description": "RTI Admin"
+    },
+	{
+      "code": "MCC_HELPDESK_USER",
+      "name": "WATER TANKER APPROVER",
+      "description": "Employee who verifies water tanker"
+    },
+	{
+      "code": "COMMERCIAL_GROUND_VIEWER",
+      "name": "COMMERCIAL GROUND VIEWER",
+      "description": "Employee who views commercial ground Booking"
     }
   ]
 }

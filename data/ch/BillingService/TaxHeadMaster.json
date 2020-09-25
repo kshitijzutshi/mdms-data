@@ -135,7 +135,7 @@
     {
       "category": "FEE",
       "service": "CTL.REHRI_REGISTRATION",
-      "name": "Rehri Registration fee",
+      "name": "Rehri Registration Plate charges",
       "code": "CTL.REHRI_REGISTRATION_CHARGES",
       "isDebit": false,
       "isActualDemand": true,
@@ -3023,15 +3023,15 @@
 			"isRequired": false
 		},
 		{
-			"category": "TAX",
+			"category": "CHARGES",
 			"service": "OPMS.PETNOC",
 			"name": "Pet NOC Tax",
-			"code": "PETNOC_TAX",
+			"code": "PETNOC_POSTAL_CHARGES",
 			"isDebit": false,
 			"isActualDemand": true,
 			"order": "2",
 			"isRequired": false,
-			"taxAmount": "0"
+			"taxAmount": "25"
 		},
 		{
 			"category": "FEE",

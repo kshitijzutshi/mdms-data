@@ -5,14 +5,15 @@
     {
       "fields": [
         {
-          "path": "bookNumber",
-          "required": false,
+          "path": "typeOfNotice", // add mdms as per give fe dropdown file
+          "required": true,
           "validations": [
             {
-              "type": "length",
+              "type": "mdms",
               "params": {
-                "min": 0,
-                "max": 100
+                "moduleName": "EstatePropertyService",
+                "masterName": "typeOfNotice",
+                "filter": "typeOfNotice..code"
               }
             }
           ]
