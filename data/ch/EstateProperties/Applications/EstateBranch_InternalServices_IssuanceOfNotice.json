@@ -37,7 +37,7 @@
           ]
         },
         {
-          "path": "violationDetails",
+          "path": "violationDetails", // confirm wheather to keep this field or remove as per screen params
           "required": true,
           "validations": [
             {
@@ -50,7 +50,7 @@
           ]
         },
         {
-          "path": "violationDate",
+          "path": "violationDate", // confirm wheather to keep this field or remove as per screen params
           "required": false,
           "validations": [
             {
@@ -63,6 +63,44 @@
                 "end": {
                   "unit": "second",
                   "value": 0
+                }
+              }
+            }
+          ]
+        },
+        {
+          "path": "dateOfHearing",
+          "required": true,
+          "validations": [
+            {
+              "type": "date-range",
+              "params": {
+                "start": {
+                  "unit": "second",
+                  "value": 0
+                },
+                "end": {
+                  "unit": "year",
+                  "value": 10
+                }
+              }
+            }
+          ]
+        },
+        {
+          "path": "timeOfHearing", //check the validation for this as the field requires time as to be captured
+          "required": true,
+          "validations": [
+            {
+              "type": "date-range",
+              "params": {
+                "start": {
+                  "unit": "second",
+                  "value": 0
+                },
+                "end": {
+                  "unit": "year",
+                  "value": 10
                 }
               }
             }

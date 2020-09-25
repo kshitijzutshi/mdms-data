@@ -5,6 +5,20 @@
     {
       "fields": [
         {
+          "path": "typeOfExecution",
+          "required": true,
+          "validations": [
+            {
+              "type": "mdms",
+              "params": {
+                "moduleName": "EstatePropertyService",
+                "masterName": "typeOfExecution",
+                "filter": "typeOfExecution..code"
+              }
+            }
+          ]
+        },
+        {
           "path": "transferor",
           "required": true,
           "validations": [
