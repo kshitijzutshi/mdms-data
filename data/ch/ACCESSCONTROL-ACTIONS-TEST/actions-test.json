@@ -21989,6 +21989,51 @@
       "path": "Finance.Budgeting.verifyBudgetSO"
     },
 	{
+      "id": 5056,
+      "name": "AuctionReadFromExcelAndSaveData",
+      "url": "/est-services/v1/excel/read",
+      "displayName": "Auction read from excel and save data",
+      "orderNumber": 0,
+      "enabled": false,
+      "serviceCode": "Excel-services",
+      "code": "null",
+      "path": "AuctionReadFromExcelAndSaveData"
+    },
+	{
+      "id": 5057,
+      "name": "AuctionReadFromExcelAndSaveDataWithPropertyId",
+      "url": "/est-services/auctions/_create",
+      "displayName": "Auction Data read from excel and save data with Property FK (File number)",
+      "orderNumber": 0,
+      "enabled": false,
+      "serviceCode": "Auction-services",
+      "code": "null",
+      "path": "AuctionReadFromExcelAndSaveDataWithPropertyId"
+    },
+	,
+	{
+      "id": 5058,
+      "name": "AuctionDataFetchByFileIdFromProperty",
+      "url": "/est-services/auctions/_search",
+      "displayName": "Auction Data fetch from data base, based on Property table(file_number)",
+      "orderNumber": 0,
+      "enabled": false,
+      "serviceCode": "Auction-services",
+      "code": "null",
+      "path": "AuctionDataFetchByFileIdFromProperty"
+    },
+	{
+      "id": 5059,
+      "name": "AuctionUpdateDataWithAuctionId",
+      "url": "/est-services/auctions/_update",
+      "displayName": "Auction update data with Auction PK (ID)",
+      "orderNumber": 0,
+      "enabled": false,
+      "serviceCode": "Auction-services",
+      "code": "null",
+      "path": "AuctionUpdateDataWithAuctionId"
+    },
+	{
 		"id": 6000,
 		"name": "getrti",
 		"url": "/integration-services/rti/v1/_get",
