@@ -12823,22 +12823,6 @@
       "path": "Finance.Set-up.Budget Control Type.Create/Update-Budget Control Type"
     },
     {
-      "id": 1766,
-      "name": "rainmaker-common-workflow",
-      "url": "",
-      "displayName": "",
-      "orderNumber": 2,
-      "parentModule": "",
-      "enabled": true,
-      "serviceCode": "",
-      "code": "",
-      "path": "",
-      "navigationURL": "",
-      "leftIcon": "",
-      "rightIcon": "",
-      "queryParams": ""
-    },
-    {
       "id": 1767,
       "name": "departmentwiseBudgetReports_master",
       "url": "url",
