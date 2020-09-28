@@ -28,7 +28,7 @@
                 {
                     "name": "Transfer of Ownership on the basis of Registered Will",
                     "code": "ES_TRANSFER_OF_OWNERSHIP_INTESTATE_DEATH",
-                    "type": "EstateBranch_OwnershipTransfer_InstestateDeath",
+                    "type": "EstateBranch_OwnershipTransfer_IntestateDeath",
                     "active": true
                 },
                 {
